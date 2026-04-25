@@ -1,0 +1,83 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Efecto de zoom al pasar el mouse sobre la imagen */
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Tarjeta con sombra suave y mejor sensación de profundidad */
+.card {
+  border-radius: 12px;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* Evitar que el título se salga de la tarjeta */
+.card-title {
+  font-size: 0.9rem;
+}
+
+/* Un poco más de separación visual entre tarjetas */
+.mb-4:first-child {
+  margin-top: 1rem;
+}
+/* Fondo elegante y separación del contenido */
+footer {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  border-top: 1px solid #333;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Estilo de los enlaces del menú */
+.nav-link {
+  color: #b0b0b0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0.8rem !important;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+/* Hover con efecto suave y fondo ligeramente más claro */
+.nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Pequeña línea debajo al pasar el mouse */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0.35rem;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #0dcaf0;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Texto del copyright */
+.text-muted,
+.text-center.text-muted {
+  color: #888 !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+/* Separador inferior del menú (borde) */
+.border-top {
+  border-bottom: 1px solid #333 !important;
+}
